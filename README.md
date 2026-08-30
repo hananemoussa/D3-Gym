@@ -1,6 +1,6 @@
 # D3-Gym
 
-**Note**: In this anonymous release, we do not include D3-Gym environments (i.e. docker environments with full pre-installed dependencies) and full model trajectories due to GitHub size limitations. These items will be shared on DockerHub and HuggingFace respectively as part of the official release. We do provide the lightweight metadata from all D3-Gym tasks in `data/` folder. 
+**Note**: In this anonymous release, we do not include D3-Gym environments (i.e. docker environments with full pre-installed dependencies) and full model trajectories due to GitHub size limitations. These items will be shared on DockerHub and HuggingFace respectively as part of the official release. We do provide the lightweight metadata from all D3-Gym tasks in `tasks/` folder. 
 
 D3-Gym is the first automatically constructed dataset of **verifiable environments** for **Data-Driven Discovery**. It contains 565 tasks derived from 239 real-world multi-disciplinary  scientific repositories.  
 
