@@ -1,5 +1,7 @@
 # D3-Gym
 
+**Note**: In this anonymous release, we do not include D3-Gym environments (i.e. docker environments with full pre-installed dependencies) and full model trajectories due to GitHub size limitations. These items will be shared on DockerHub and HuggingFace respectively as part of the official release. We do provide the lightweight metadata from all D3-Gym tasks in `data/` folder. 
+
 D3-Gym is the first automatically constructed dataset of **verifiable environments** for **Data-Driven Discovery**. It contains 565 tasks derived from 239 real-world multi-disciplinary  scientific repositories.  
 
 Each task includes:
@@ -13,7 +15,7 @@ Each task includes:
 
 ## Using D3-Gym Environments
 
-All task environments are distributed as Docker images via  <a href="https://hub.docker.com/repository/docker/hananemoussa/d3-gym/general">Docker Hub</a>.
+All task environments are distributed as Docker images via `Redacted Link`.
 
 Each image is a self-contained unit representing a single data-driven discovery task. It includes the task specification, datasets and previews, reference outputs, and evaluation script, along with pre-installed dependencies.
 
@@ -33,8 +35,8 @@ For easier browsing, we also provide an annotation sheet with metadata for all t
 Pull a task image and inspect it:
 
 ~~~bash
-docker pull hananemoussa/d3-gym:task_1
-docker run --rm hananemoussa/d3-gym:task_1 inspect
+docker pull owner/redacted_repo:task_1
+docker run --rm owner/redacted_repo:task_1 inspect
 ~~~
 
 Run your solution and evaluate:
@@ -42,7 +44,7 @@ Run your solution and evaluate:
 ~~~bash
 docker run --rm \
   -v $(pwd)/solution.py:/task/solution.py:ro \
-  hananemoussa/d3-gym:task_1 run_and_eval
+  owner/redacted_repo:task_1 run_and_eval
 ~~~
 
 ---
@@ -68,15 +70,15 @@ Each Docker image exposes the following directory layout:
 # Run and evaluate a solution
 docker run --rm \
   -v $(pwd)/solution.py:/task/solution.py:ro \
-  hananemoussa/d3-gym:task_151 run_and_eval
+  owner/redacted_repo:task_151 run_and_eval
 
 # Evaluate precomputed results
 docker run --rm \
   -v $(pwd)/my_results:/task/pred_results:ro \
-  hananemoussa/d3-gym:task_151 eval
+  owner/redacted_repo:task_151 eval
 
 # Interactive debugging session
-docker run --rm -it hananemoussa/d3-gym:task_151 shell
+docker run --rm -it owner/redacted_repo:task_151 shell
 ~~~
 
 ---
@@ -85,7 +87,7 @@ docker run --rm -it hananemoussa/d3-gym:task_151 shell
 
 D3-Gym supports workflows that require executable environments with verifiable evaluation signals for data-driven discovery (e.g. reinforcement learning, self-improvement, etc.).
 
-One use case is generating training trajectories (e.g., reasoning traces and solutions). The trajectories used in our experiments are available on <a href="https://huggingface.co/datasets/osunlp/D3-Gym-Trajectories">HuggingFace</a>. 
+One use case is generating training trajectories (e.g., reasoning traces and solutions). The trajectories used in our experiments are available on `Redacted Link`. 
 
 ---
 
@@ -112,16 +114,3 @@ Repositories used in the creation of D3-Gym are under permissive licenses. We pr
 - DeepDelta
 
 ---
-
-## Citation
-
-If you find our paper or resources useful in your work, please cite us:
-
-```bibtex
-@article{d3gym2026,
-  title   = {D3-Gym: Constructing Verifiable Environments for Data-Driven Discovery},
-  author  = {Hanane Nour Moussa, Yifei Li, Zhuoyang Li, Yankai Yang, Cheng Tang, Tianshu Zhang, Nesreen K. Ahmed, Ali Payani, Ziru Chen, Huan Sun},
-  journal = {arXiv preprint arXiv:2604.27977},
-  year    = {2026},
-  url     = {https://arxiv.org/abs/2604.27977}
-}
