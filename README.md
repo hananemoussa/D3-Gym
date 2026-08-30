@@ -1,14 +1,5 @@
 # D3-Gym
 
-<p align="center">
-  <a href="https://arxiv.org/abs/2604.27977">[Paper]</a> &nbsp;
-  <a href="https://huggingface.co/collections/osunlp/d3-gym">[HuggingFace]</a> &nbsp;
-  <a href="https://hub.docker.com/repository/docker/hananemoussa/d3-gym/general">[Docker Hub]</a>
-</p>
-<p align="center">
-  <img width="1425" height="668" alt="image" src="https://github.com/user-attachments/assets/d4cffe95-74aa-47f3-9d7b-60f1562b3414" />
-</p>
-
 D3-Gym is the first automatically constructed dataset of **verifiable environments** for **Data-Driven Discovery**. It contains 565 tasks derived from 239 real-world multi-disciplinary  scientific repositories.  
 
 Each task includes:
