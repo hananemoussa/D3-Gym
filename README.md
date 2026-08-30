@@ -15,7 +15,7 @@ Each task includes:
 
 ## Using D3-Gym Environments
 
-All task environments will be distributed as Docker images via `Redacted Link`.
+All task environments are distributed as Docker images via `Redacted Link`.
 
 Each image is a self-contained unit representing a single data-driven discovery task. It includes the task specification, datasets and previews, reference outputs, and evaluation script, along with pre-installed dependencies.
 
