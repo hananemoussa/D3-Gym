@@ -23,9 +23,7 @@ To solve a task, provide a `solution.py` that:
 - reads the provided datasets, and  
 - writes outputs to `pred_results/`.
 
-The evaluation script compares your outputs against the reference and returns a pass/fail decision with a short explanation.
-
-For easier browsing, we also provide an annotation sheet with metadata for all tasks on <a href="https://huggingface.co/datasets/osunlp/D3-Gym">HuggingFace</a>.  
+The evaluation script compares your outputs against the reference and returns a pass/fail decision with a short explanation. 
 
 
 ---
